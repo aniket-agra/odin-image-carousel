@@ -13,9 +13,12 @@ for (let i = 0; i < 10; i++) {
     image.classList.add("picture");
     image.setAttribute("src", "");
     image.setAttribute("alt", `Img${i}`);
-    i === 0 ? displayElem.appendChild(image) : carouselElem.appendChild(image);
+    if (i === 0) {
+        displayElem.appendChild(image);
+        carouselElem.appendChild(displayElem);
+    }
+    else
+        carouselElem.appendChild(image);
 }
-
-carouselElem.appendChild(displayElem);
 
 bodyElem.appendChild(carouselElem);
