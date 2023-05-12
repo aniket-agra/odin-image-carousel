@@ -1,0 +1,9 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.picture {
+    width: 224px;
+    height: 224px;
+}
