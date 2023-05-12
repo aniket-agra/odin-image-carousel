@@ -22,3 +22,22 @@ for (let i = 0; i < 10; i++) {
 }
 
 bodyElem.appendChild(carouselElem);
+
+let prevBtn = document.createElement("button");
+prevBtn.textContent = "Prev";
+prevBtn.addEventListener("click", slideRight);
+bodyElem.appendChild(prevBtn);
+
+let nextBtn = document.createElement("button");
+nextBtn.textContent = "Next";
+nextBtn.addEventListener("click", slideLeft);
+bodyElem.appendChild(nextBtn);
+
+function slideRight(e) {
+    console.log(carouselElem.querySelector(".carousel > img:last-child"));
+
+}
+
+function slideLeft(e) {
+    console.log(carouselElem.querySelector(".carousel > img:nth-child(2)"));
+}
