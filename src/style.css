@@ -4,6 +4,11 @@
     grid-auto-flow: column;
 }
 
+.display {
+    padding: 1rem 1rem;
+    border-radius: 2px solid red;
+}
+
 .picture {
     width: 224px;
     height: 224px;
