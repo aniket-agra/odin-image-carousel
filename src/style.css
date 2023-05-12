@@ -6,7 +6,7 @@
 
 .display {
     padding: 1rem 1rem;
-    border-radius: 2px solid red;
+    border: 2px solid red;
 }
 
 .picture {
