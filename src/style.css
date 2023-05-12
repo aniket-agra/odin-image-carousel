@@ -1,6 +1,7 @@
 .carousel {
-    display: flex;
+    display: grid;
     overflow: hidden;
+    grid-auto-flow: column;
 }
 
 .picture {
